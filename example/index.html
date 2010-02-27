@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Eric Muyser's jDrawer</title>
+
+		<meta name="title" content="jDrawer">
+		<meta name="author" content="Eric Muyser">
+		<meta name="description" content="jDrawer - The dynamic content module created with jQuery JavaScript library">
+
+		<meta name="keywords" content="jDrawer, Eric Muyser">
+		<meta name="Generator" content="jDrawer - Copyright (c) 2008 Eric Muyser. All rights reserved.">
+		<meta name="robots" content="index, follow">
+		
+		<link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+		
+		<link type="text/css" rel="stylesheet" href="css/main.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="css/jdrawer.css" media="screen" />
+		
+		<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+		<script type="text/javascript" src="../src/jquery.jdrawer.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{
+				$("#jDrawer-1").jDrawer({event: "click"});
+				$("#jDrawer-2").jDrawer({speed: 500, sticky: false});
+				$("#jDrawer-3").jDrawer({direction: "left", sticky: false});
+				$("#jDrawer-4").jDrawer({direction: "left", event: "click"});
+				$("#jDrawer-5").jDrawer();
+				$("#jDrawer-6").jDrawer({callback: function() { alert("hover"); } });
+			});
+		</script>
+	</head>
+	<body>
+		<noscript>
+			Sorry, this website requires JavaScript enabled.
+			
+			<div style="display: none">
+		</noscript>
+		<br /><br />
+		<div class="wrapper">
+			<div class="module-drawer">
+				<div style="float: left; width: 188px;">
+
+					<div class="title-l"><div class="title-r"><div class="title">jDrawer Vertical</div></div></div>
+					<ul id="jDrawer-5" style="display: none">
+						<li class="jDrawer-active">
+							<center>
+								<a href="#">
+									<img class="png" title="New! jDrawer" alt="New! jDrawer" src="images/jDrawer.png" height="110" width="150">
+								</a>
+							</center>
+
+							<div class="jDrawer-handle">
+								<h3>New! jDrawer</h3>
+								<div class="jDrawer-divider"></div>
+								Keep playing with the new jDrawer module.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+						</li>
+
+						<li>
+							<center>
+								<a href="#">
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>Latest Gadgets</h3>
+
+								<div class="jDrawer-divider"></div>
+								Check out the latest cutting-edge features.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>jSkin</h3>
+								<div class="jDrawer-divider"></div>
+								Professional Web 2.0! template club.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+
+								<h3>Sign Up</h3>
+								<div class="jDrawer-divider"></div>
+								Web 2.0 for your site?
+								<br />
+								Kick your design from 1999!
+								<br />
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				
+				<div style="float: left; margin-left: 10px; width: 188px;">
+					<div class="title-l"><div class="title-r"><div class="title">jDrawer Vertical 2</div></div></div>
+					<ul id="jDrawer-1" style="display: none">
+						<li>
+							<center>
+								<a href="#">
+
+									<img class="png" title="New! jDrawer" alt="New! jDrawer" src="images/jDrawer.png" height="110" width="150">
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>New! jDrawer</h3>
+								<div class="jDrawer-divider"></div>
+								Keep playing with the new jDrawer module.
+								<br />
+								<a href="#">Learn more...</a>
+
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#">
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+
+								<h3>Latest Gadgets</h3>
+								<div class="jDrawer-divider"></div>
+								Check out the latest cutting-edge features.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+						</li>
+						<li>
+
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>jSkin</h3>
+								<div class="jDrawer-divider"></div>
+
+								Professional Web 2.0! template club.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>Sign Up</h3>
+								<div class="jDrawer-divider"></div>
+								Web 2.0 for your site?
+								<br />
+								Kick your design from 1999!
+								<br />
+
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+
+							</center>
+							<div class="jDrawer-handle">
+								<center><h3>Register</h3></center>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>jSkin</h3>
+								<div class="jDrawer-divider"></div>
+								Proin semper eros et est. Aenean nec turpis. Curabitur lacinia elit in risus. Curabitur accumsan ipsum eget nisl.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#">
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+
+								&nbsp;
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+							</center>
+
+							<div class="jDrawer-handle">
+								<h3>Sign up</h3>
+								<div class="jDrawer-divider"></div>
+								Web 2.0 for your site?
+	
+								<br />
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				
+				<div style="float: left; margin-left: 10px; width: 188px;">
+					<div class="title-l"><div class="title-r"><div class="title">jDrawer Vertical 3</div></div></div>
+					<ul id="jDrawer-2" style="display: none">
+						<div class="jDrawer-title-l"><div class="jDrawer-title-r"><div class="jDrawer-title">jDrawer Vertical 3</div></div></div>
+						<li>
+							<center>
+
+								<a href="#">
+									<img class="png" title="New! jDrawer" alt="New! jDrawer" src="images/jDrawer.png" height="110" width="150">
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>New! jDrawer</h3>
+								<div class="jDrawer-divider"></div>
+								Keep playing with the new jDrawer module.
+								<br />
+
+								<a href="#">Learn more...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#">
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+
+							</center>
+							<div class="jDrawer-handle">
+								<h3>Latest Gadgets</h3>
+								<div class="jDrawer-divider"></div>
+								Check out the latest cutting-edge features.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>jSkin</h3>
+
+								<div class="jDrawer-divider"></div>
+								Professional Web 2.0! template club.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>Sign Up</h3>
+								<div class="jDrawer-divider"></div>
+								Web 2.0 for your site?
+								<br />
+								Kick your design from 1999!
+								<br />
+
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+
+							</center>
+							<div class="jDrawer-handle">
+								<center><h3>Register</h3></center>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>jSkin</h3>
+								<div class="jDrawer-divider"></div>
+								Proin semper eros et est. Aenean nec turpis. Curabitur lacinia elit in risus. Curabitur accumsan ipsum eget nisl.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#">
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+
+								&nbsp;
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+							</center>
+
+							<div class="jDrawer-handle">
+								<h3>Sign up</h3>
+								<div class="jDrawer-divider"></div>
+								Web 2.0 for your site?
+	
+								<br />
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				
+				<div style="float: left; margin-left: 10px; width: 188px;">
+					<div class="title-l"><div class="title-r"><div class="title">jDrawer Vertical 4</div></div></div>
+					<ul id="jDrawer-6" style="display: none">
+						<div class="jDrawer-title-l"><div class="jDrawer-title-r"><div class="jDrawer-title">jDrawer Vertical 4</div></div></div>
+						<li>
+							<center>
+
+								<a href="#">
+									<img class="png" title="New! jDrawer" alt="New! jDrawer" src="images/jDrawer.png" height="110" width="150">
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>New! jDrawer</h3>
+								<div class="jDrawer-divider"></div>
+								Keep playing with the new jDrawer module.
+								<br />
+
+								<a href="#">Learn more...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#">
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+
+							</center>
+							<div class="jDrawer-handle">
+								<h3>Latest Gadgets</h3>
+								<div class="jDrawer-divider"></div>
+								Check out the latest cutting-edge features.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>jSkin</h3>
+
+								<div class="jDrawer-divider"></div>
+								Professional Web 2.0! template club.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+							</div>
+						</li>
+						<li>
+							<center>
+								<a href="#" target="_blank">
+
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+							</center>
+							<div class="jDrawer-handle">
+								<h3>Sign Up</h3>
+								<div class="jDrawer-divider"></div>
+								Web 2.0 for your site?
+								<br />
+								Kick your design from 1999!
+								<br />
+
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+<br /><br />
+				<div>
+					<ul id="jDrawer-3" style="display: none">
+						<li>
+
+							<div style="float: left; padding-left: 10px">
+								<h3>New! jDrawer</h3>
+								<div class="jDrawer-divider"></div>
+								Keep playing with the new jDrawer module.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+							<div class="jDrawer-handle">
+
+								<a href="#">
+									<img class="png" title="New! jDrawer" alt="New! jDrawer" src="images/jDrawer.png" height="110" width="150">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div style="float: left; padding-left: 10px">
+								<h3>Latest Gadgets</h3>
+
+								<div class="jDrawer-divider"></div>
+								Check out the latest cutting-edge features.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+							<div class="jDrawer-handle">
+								<a href="#">
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+
+							</div>
+						</li>
+						<li>
+							<div style="float: left; padding-left: 10px">
+								<h3>jSkin</h3>
+								<div class="jDrawer-divider"></div>
+								Professional Web 2.0! template club.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+
+							</div>
+							<div class="jDrawer-handle">
+								<a href="#" target="_blank">
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</div>
+						</li>
+						<li>
+							<div style="float: left; padding-left: 10px">
+
+								<h3>Sign Up</h3>
+								<div class="jDrawer-divider"></div>
+								Web 2.0 for your site?
+								<br />
+								Kick your design from 1999!
+								<br />
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+							<div class="jDrawer-handle">
+
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div style="clear: both">
+					<ul id="jDrawer-4" style="display: none">
+
+						<li class="jDrawer-active">
+							<div style="float: left">
+								<a href="#">
+									<img class="png" title="New! jDrawer" alt="New! jDrawer" src="images/jDrawer.png" height="110" width="150">
+								</a>
+							</div>
+							<div class="jDrawer-handle" style="padding-left: 10px">
+								<h3>New! jDrawer</h3>
+
+								<div class="jDrawer-divider"></div>
+								Keep playing with the new jDrawer module.
+								<br />
+								<a href="#">Learn more...</a>
+							</div>
+						</li>
+						<li>
+							<div style="float: left">
+								<a href="#">
+
+									<img class="png" title="Latest Gadgets" alt="Latest Gadgets" src="images/gadgets.png" height="110" width="150" />
+								</a>
+							</div>
+							<div class="jDrawer-handle" style="padding-left: 10px">
+								<h3>Latest Gadgets</h3>
+								<div class="jDrawer-divider"></div>
+								Check out the latest cutting-edge features.
+								<br />
+								<a href="#">Learn more...</a>
+
+							</div>
+						</li>
+						<li>
+							<div style="float: left">
+								<a href="#" target="_blank">
+									<img class="png" title="jSkin" alt="jSkin" src="images/jskin.png" height="110" width="150" />
+								</a>
+							</div>
+							<div class="jDrawer-handle" style="padding-left: 10px">
+
+								<h3>jSkin</h3>
+								<div class="jDrawer-divider"></div>
+								Professional Web 2.0! template club.
+								<br />
+								<a href="#" target="_blank">Learn more...</a>
+							</div>
+						</li>
+						<li>
+
+							<div style="float: left">
+								<a href="#" target="_blank">
+									<img class="png" title="Sign up" alt="Sign up" src="images/signup.png" height="110" width="150" />
+								</a>
+							</div>
+							<div class="jDrawer-handle" style="padding-left: 10px">
+								<h3>Sign Up</h3>
+								<div class="jDrawer-divider"></div>
+
+								Web 2.0 for your site?
+								<br />
+								Kick your design from 1999!
+								<br />
+								<a href="#" target="_blank">Join today...</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<br /><br /><br /><br /><br /><br /><br />
+		<noscript>
+			</div>
+		</noscript>
+	</body>
+</html>
