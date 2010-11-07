@@ -1,0 +1,110 @@
+.ui-drawer
+{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	list-style: none;
+}
+
+.ui-drawer a
+{
+	color: #5A9FC4;
+	text-decoration: none;
+}
+
+.ui-drawer .ui-state-active a
+{
+	color: #005596;
+}
+
+.ui-drawer a:hover
+{
+	color: #009DE3 !important;
+	text-decoration: underline;
+}
+
+
+.ui-drawer-top
+{
+	width: 188px;
+}
+
+.ui-drawer-left
+{
+	height: 188px;
+}
+
+.ui-drawer .ui-drawer-item
+{
+	display: block;
+	_overflow: hidden;
+	position: absolute;
+	top: 0pt;
+	left: 0pt;
+	z-index: 1;
+}
+
+.ui-drawer-top .ui-drawer-item
+{
+	width: 100%;
+}
+
+.ui-drawer-left .ui-drawer-item
+{
+	height: 100%;
+}
+
+.ui-drawer-top .ui-drawer-content
+{
+	color: #969696;
+	padding: 10px;
+}
+
+.ui-drawer-top .ui-state-active .ui-drawer-content
+{
+	color: #333;
+}
+
+.ui-drawer-top .ui-drawer-content h3
+{
+	font-size: 1.45em;
+	font-weight: bold;
+}
+
+.ui-drawer-left .ui-drawer-content
+{
+	color: #969696;
+	padding: 10px;
+}
+
+.ui-drawer-left .ui-drawer-active .ui-drawer-content
+{
+	color: #333;
+}
+
+.ui-drawer-left .ui-drawer-content h3
+{
+	font-size: 1.45em;
+	font-weight: bold;
+}
+
+.ui-drawer-top .ui-drawer-handle
+{
+	padding-top: 5px;
+}
+
+.ui-drawer-left .ui-drawer-handle
+{
+	float: left;
+}
+
+.ui-drawer .ui-drawer-divider
+{
+	border-top: 1px solid #E0E0E0;
+	margin: 5px 0px;
+}
+
+.ui-drawer-top .ui-drawer-active .ui-drawer-divider
+{
+	border-top: 1px solid #969696;
+}

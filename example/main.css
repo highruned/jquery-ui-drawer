@@ -1,0 +1,138 @@
+*
+{
+	margin: 0pt;
+	padding: 0pt;
+}
+
+html
+{
+}
+
+body
+{
+	background-color: #FFF;
+	color: #333333;
+	font-size: 62.5%;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size-adjust: none;
+	text-align: center;
+}
+
+img.png
+{
+	_behavior: url(iepngfix.htc);
+}
+
+table
+{
+	font-family: "Lucida Grande", "Segoe UI", Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+
+img, input, table
+{
+	border: 0pt;
+}
+
+.png
+{
+	behavior: url(iepngfix.htc);
+}
+
+br
+{
+	clear: both;
+}
+
+ul
+{
+	display: block;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+li
+{
+
+}
+
+li a
+{
+
+}
+
+li a:hover
+{
+
+}
+
+.box, .button, .drop
+{
+	font-size: 1.0em;
+	padding: 2px;
+}
+
+.box
+{
+	border: 1px solid #202528;
+}
+
+.button
+{
+	background-color: #202528;
+	color: #FFF;
+}
+
+.button:hover
+{
+	background-color: #444;
+}
+
+.drop
+{
+	border: 1px solid #202528;
+}
+
+.wrapper
+{
+	font-family: "Lucida Grande", "Segoe UI", Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	margin: 0px auto;
+	text-align: left;
+	padding: 20px;
+}
+
+.navigation
+{
+	text-align: center;
+	padding: 10px;
+}
+
+.container
+{
+	padding: 10px;
+}
+
+.title-l
+{
+	background: transparent url(../images/jDrawer-top-title-l.png) no-repeat scroll 0% 0%;
+	padding: 0pt 0pt 0pt 10px;
+}
+
+.title-r
+{
+	background: transparent url(../images/jDrawer-top-title-r.png) no-repeat scroll 100% 0%;
+	padding: 0pt 10px 0pt 0pt;
+}
+
+.title
+{
+	color: #FFF;
+	height: 21px;
+	font-size: 1.1em;
+	line-height: 1.7em;
+	padding: 2px 0pt;
+}

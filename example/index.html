@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>jQuery Drawer</title>
+
+		<meta name="title" content="Drawer">
+		<meta name="author" content="Eric Muyser">
+		<meta name="description" content="Drawer - The dynamic content module created with jQuery JavaScript library">
+
+		<meta name="keywords" content="Drawer, Eric Muyser">
+		<meta name="robots" content="index, follow">
+		
+		<link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+		
+		<link type="text/css" rel="stylesheet" href="main.css" media="screen" />
+		<link type="text/css" rel="stylesheet" href="../src/drawer.css" media="screen" />
+		
+		<style type="text/css" rel="stylesheet">
+.ui-drawer-item
+{
+	background-color: #fff;
+}
+		</style>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="../src/drawer.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($)
+			{
+				//$('#drawer-1').drawer2({hmm: 10});
+				//$('#drawer-2').drawer2();
+				$('#drawer-1').drawer();
+				$('#drawer-2').drawer({selectEvent: 'click'});
+				$('#drawer-3').drawer({speed: 500, sticky: false});
+				$('#drawer-4').drawer({selectEvent: 'click', onChange: function() { alert('changed'); } });
+				$('#drawer-5').drawer({direction: 'left', sticky: false});
+				$('#drawer-6').drawer({direction: 'left', selectEvent: 'click'});
+			});
+		</script>
+	</head>
+	<body>
+		<br /><br />
+		<div class="wrapper">
+			<div style="float: left; width: 188px;">
+				<h3>Drawer Vertical</h3>
+				<ul id="drawer-1">
+					<li class="ui-state-active">
+						<a href="#">
+							<img alt="New! Drawer" src="drawer.png" height="110" width="150">
+						</a>
+						<div>
+							<h3>New! Drawer</h3>
+							<hr />
+							Keep playing with the new Drawer module.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Latest Gadgets</h3>
+							<hr />
+							Check out the latest cutting-edge features.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Professional Web 2.0! template club.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign Up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							Kick your design from 1999!
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<center><h3>Register</h3></center>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Proin semper eros et est. Aenean nec turpis. Curabitur lacinia elit in risus. Curabitur accumsan ipsum eget nisl.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							&nbsp;
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div style="float: left; margin-left: 10px; width: 188px;">
+				<h3>Drawer Vertical 2</h3>
+				<ul id="drawer-2">
+					<li>
+						<a href="#">
+							<img alt="New! Drawer" src="drawer.png" height="110" width="150">
+						</a>
+						<div>
+							<h3>New! Drawer</h3>
+							<hr />
+							Keep playing with the new Drawer module.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Latest Gadgets</h3>
+							<hr />
+							Check out the latest cutting-edge features.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Professional Web 2.0! template club.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign Up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							Kick your design from 1999!
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<center><h3>Register</h3></center>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Proin semper eros et est. Aenean nec turpis. Curabitur lacinia elit in risus. Curabitur accumsan ipsum eget nisl.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							&nbsp;
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div style="float: left; margin-left: 10px; width: 188px;">
+				<h3>Drawer Vertical 3</h3>
+				<ul id="drawer-3">
+					<li>
+						<a href="#">
+							<img alt="New! Drawer" src="drawer.png" height="110" width="150">
+						</a>
+						<div>
+							<h3>New! Drawer</h3>
+							<hr />
+							Keep playing with the new Drawer module.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Latest Gadgets</h3>
+							<hr />
+							Check out the latest cutting-edge features.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Professional Web 2.0! template club.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign Up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							Kick your design from 1999!
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<center><h3>Register</h3></center>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Proin semper eros et est. Aenean nec turpis. Curabitur lacinia elit in risus. Curabitur accumsan ipsum eget nisl.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							&nbsp;
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div style="float: left; margin-left: 10px; width: 188px;">
+				<h3>Drawer Vertical 4</h3>
+				<ul id="drawer-4">
+					<li>
+						<a href="#">
+							<img alt="New! Drawer" src="drawer.png" height="110" width="150">
+						</a>
+						<div>
+							<h3>New! Drawer</h3>
+							<hr />
+							Keep playing with the new Drawer module.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Latest Gadgets</h3>
+							<hr />
+							Check out the latest cutting-edge features.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Professional Web 2.0! template club.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign Up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							Kick your design from 1999!
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<center><h3>Register</h3></center>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Skin" src="theme.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Skin</h3>
+							<hr />
+							Proin semper eros et est. Aenean nec turpis. Curabitur lacinia elit in risus. Curabitur accumsan ipsum eget nisl.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+						</a>
+						<div>
+							&nbsp;
+						</div>
+					</li>
+					<li>
+						<a href="#">
+							<img alt="Sign up" src="signup.png" height="110" width="150" />
+						</a>
+						<div>
+							<h3>Sign up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+<br /><br />
+			<div>
+				<ul id="drawer-5">
+					<li>
+						<div style="float: left; padding-left: 10px">
+							<h3>New! Drawer</h3>
+							<hr />
+							Keep playing with the new Drawer module.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+						<div>
+							<a href="#">
+								<img alt="New! Drawer" src="drawer.png" height="110" width="150">
+							</a>
+						</div>
+					</li>
+					<li>
+						<div style="float: left; padding-left: 10px">
+							<h3>Latest Gadgets</h3>
+							<hr />
+							Check out the latest cutting-edge features.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+						<div>
+							<a href="#">
+								<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+							</a>
+						</div>
+					</li>
+					<li>
+						<div style="float: left; padding-left: 10px">
+							<h3>Skin</h3>
+							<hr />
+							Professional Web 2.0! template club.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+						<div>
+							<a href="#">
+								<img alt="Skin" src="theme.png" height="110" width="150" />
+							</a>
+						</div>
+					</li>
+					<li>
+						<div style="float: left; padding-left: 10px">
+							<h3>Sign Up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							Kick your design from 1999!
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+						<div>
+							<a href="#">
+								<img alt="Sign up" src="signup.png" height="110" width="150" />
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div style="clear: both">
+				<ul id="drawer-6">
+					<li class="ui-state-active">
+						<div style="float: left">
+							<a href="#">
+								<img class="png" title="New! Drawer" alt="New! Drawer" src="drawer.png" height="110" width="150">
+							</a>
+						</div>
+						<div style="padding-left: 10px">
+							<h3>New! Drawer</h3>
+							<hr />
+							Keep playing with the new Drawer module.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<div style="float: left">
+							<a href="#">
+								<img alt="Latest Gadgets" src="gadgets.png" height="110" width="150" />
+							</a>
+						</div>
+						<div style="padding-left: 10px">
+							<h3>Latest Gadgets</h3>
+							<hr />
+							Check out the latest cutting-edge features.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<div style="float: left">
+							<a href="#" >
+								<img alt="Skin" src="theme.png" height="110" width="150" />
+							</a>
+						</div>
+						<div style="padding-left: 10px">
+							<h3>Skin</h3>
+							<hr />
+							Professional Web 2.0! template club.
+							<br />
+							<a href="#">Learn more...</a>
+						</div>
+					</li>
+					<li>
+						<div style="float: left">
+							<a href="#">
+								<img alt="Sign up" src="signup.png" height="110" width="150" />
+							</a>
+						</div>
+						<div style="padding-left: 10px">
+							<h3>Sign Up</h3>
+							<hr />
+							Web 2.0 for your site?
+							<br />
+							Kick your design from 1999!
+							<br />
+							<a href="#">Join today...</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br />
+	</body>
+</html>
